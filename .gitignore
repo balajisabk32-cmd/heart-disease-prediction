@@ -1,0 +1,15 @@
+kardia/
+__pycache__/
+*.pyc
+*.pth
+*.pt
+data/ptbxl/
+data/tabular/*.csv
+.env
+*.egg-info/
+dist/
+.ipynb_checkpoints/
+explainability/*.png
+reports/*.pdf
+models/*.pt
+models/*.pth
