@@ -136,6 +136,43 @@ The training curves demonstrate rapid, stable learning with early stopping at ep
 
 ---
 
+## 🧪 Robustness & Generalization: 500-Patient Mock Trials
+
+To validate Kardia's robustness against dataset shift, demographic outliers, and atypical disease presentations, we conducted **five independent mock clinical trials** of 100 patients each (total $N=500$ patients). 
+
+The trials evaluate the model's adaptability across distinct clinical conditions:
+1. **Batch 1: UCI Baseline** — Statistically matched with the original UCI Cleveland cohort.
+2. **Batch 2: Generalization Set** — Novel synthetic dataset evaluating standard classification stability.
+3. **Batch 3: Metabolic & Atypical** — High cholesterol/blood pressure, atypical chest pains, and metabolic syndrome flags.
+4. **Batch 4: Clinical Gray Zone** — Patients with boundary/overlapping risk scores and subtle stress-test anomalies.
+5. **Batch 5: Demographic Extremes** — Focus on young patients ($\le 35$ yrs) and geriatric outliers ($\ge 75$ yrs).
+
+### 📊 Trial Benchmarks & Metrics
+
+| Trial Cohort | Cohort Focus / Stress Scenario | Accuracy | AUC-ROC | F1-Score | Recall (Disease) | Specificity (Healthy) |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
+| **Batch 1** | UCI Cleveland Baseline Cohort | `85.0%` | `0.9220` | `0.8544` | `80.0%` | `91.1%` |
+| **Batch 2** | Generalization & Covariate Shift | `85.0%` | `0.9148` | `0.8387` | `78.0%` | `92.0%` |
+| **Batch 3** | Metabolic Syndrome & Atypical Pain | `87.0%` | `0.9148` | `0.8632` | `82.0%` | `92.0%` |
+| **Batch 4** | Boundary Risk & Gray-Zone Anomalies | `86.0%` | `0.9300` | `0.8511` | `80.0%` | `92.0%` |
+| **Batch 5** | Demographic Extremes (Pediatric/Geriatric) | `84.0%` | `0.9024` | `0.8298` | `78.0%` | `90.0%` |
+| **Aggregate** | **Combined Mock Evaluation ($N=500$)** | **`85.4%`** | **`0.9168`** | **`0.8474`** | **`79.6%`** | **`91.4%`** |
+
+### 📈 Trial ROC and Distribution Analyses
+Each batch generates a custom diagnostic performance plot showing prediction boundaries, risk histograms, and ROC curves:
+
+<p align="center">
+  <img src="reports/mock_100_patient_analysis.png" width="32%" alt="Batch 1 Analysis" />
+  <img src="reports/mock_batch2_analysis.png" width="32%" alt="Batch 2 Analysis" />
+  <img src="reports/mock_batch3_analysis.png" width="32%" alt="Batch 3 Analysis" />
+</p>
+<p align="center">
+  <img src="reports/mock_batch4_analysis.png" width="48%" alt="Batch 4 Analysis" />
+  <img src="reports/mock_batch5_analysis.png" width="48%" alt="Batch 5 Analysis" />
+</p>
+
+---
+
 ## 🔍 Clinically Explainable AI (XAI)
 
 For high-stakes medical deployment, Kardia avoids black-box predictions by exposing explainability maps for both clinical features and signal waveforms.
