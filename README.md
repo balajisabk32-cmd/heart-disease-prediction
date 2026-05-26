@@ -334,6 +334,6 @@ If you use this system in your research or application, please cite:
   year   = {2026},
   publisher = {GitHub},
   journal = {GitHub Repository},
-  howpublished = {\url{https://github.com/balajisabk32-cmd/heart-disease-prediction}}
+  howpublished = {\url{https://github.com/balajisabk32-cmd/Kardia}}
 }
 ```
