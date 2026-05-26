@@ -73,7 +73,7 @@ graph TD
         E1[PTB-XL Dataset] --> E2[Butterworth Bandpass Filter]
         E2 --> E3[Z-Score Normalization]
         E3 --> E4[ResNet1D Encoder]
-        E4 --> E5[Frozen Embedding (256-dim)]
+        E4 --> E5["Frozen Embedding (256-dim)"]
         E5 --> E_Proj[Linear Projector]
         E_Proj --> E_Emb["ECG Embedding (64-dim)"]
     end
