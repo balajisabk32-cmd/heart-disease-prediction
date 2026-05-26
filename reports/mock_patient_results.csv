@@ -1,0 +1,21 @@
+patient,profile,risk_score,risk_category,severity,predicted,true_label,correct,confidence_pct
+"Arjun M, 55M","Hypertensive diabetic male, typical angina",44.8,MEDIUM,Mild,DISEASE,DISEASE,True,77.5
+"Priya S, 62F","Post-menopausal female, non-anginal chest pain",47.6,MEDIUM,None,HEALTHY,HEALTHY,True,39.5
+"Ravi K, 48M","Young athletic male, atypical angina",47.1,MEDIUM,None,HEALTHY,HEALTHY,True,44.7
+"Meena T, 70F","Elderly female, typical angina with ST depression",45.8,MEDIUM,Mild,DISEASE,DISEASE,True,75.5
+"Suresh P, 45M","Young male runner, asymptomatic",44.6,MEDIUM,None,HEALTHY,HEALTHY,True,19.4
+"Lakshmi R, 58F","Middle-aged female, atypical angina",43.9,MEDIUM,None,HEALTHY,HEALTHY,True,15.7
+"Karthik N, 63M","Older male, typical angina, ST depression",42.5,MEDIUM,None,HEALTHY,DISEASE,False,20.1
+"Anitha D, 52F","Perimenopausal female, non-anginal",45.0,MEDIUM,None,HEALTHY,HEALTHY,True,21.0
+"Vijay G, 67M","Senior male, typical angina, 3-vessel disease",43.8,MEDIUM,None,HEALTHY,DISEASE,False,25.3
+"Deepa V, 41F","Young female, non-anginal, low risk",45.5,MEDIUM,None,HEALTHY,HEALTHY,True,21.9
+"Rajesh B, 72M","Elderly male, severe multi-vessel CAD",45.7,MEDIUM,None,HEALTHY,DISEASE,False,30.3
+"Kavitha L, 55F","Middle-aged female, mild atypical angina",43.5,MEDIUM,None,HEALTHY,HEALTHY,True,19.6
+"Arun S, 38M","Young male, non-anginal, very low risk",46.1,MEDIUM,None,HEALTHY,HEALTHY,True,34.3
+"Sumathi C, 65F","Senior female, typical angina, diabetic",37.5,MEDIUM,Mild,DISEASE,DISEASE,True,82.9
+"Mohan R, 59M","Middle-aged male, exertional chest pain",44.9,MEDIUM,None,HEALTHY,DISEASE,False,29.4
+"Saranya K, 44F","Young female, atypical, low risk",45.1,MEDIUM,None,HEALTHY,HEALTHY,True,22.1
+"Ganesh P, 76M","Elderly male, 3-vessel CAD, severe",36.7,MEDIUM,Mild,DISEASE,DISEASE,True,83.5
+"Revathi N, 50F","Middle-aged female, non-anginal, healthy",45.0,MEDIUM,None,HEALTHY,HEALTHY,True,22.5
+"Senthil A, 61M","Senior male, typical angina, 2-vessel",44.5,MEDIUM,Mild,DISEASE,DISEASE,True,66.8
+"Padma V, 68F","Elderly female, atypical, borderline",43.1,MEDIUM,None,HEALTHY,HEALTHY,True,18.8
