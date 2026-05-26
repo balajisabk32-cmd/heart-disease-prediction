@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/kardia_banner.png" alt="Kardia Banner" width="100%" />
+  <img src="assets/kardia_logo.png" alt="Kardia Logo" width="80%" />
 </p>
 
 <p align="center">
